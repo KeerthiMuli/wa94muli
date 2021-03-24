@@ -10,8 +10,11 @@
     "debug": "^4.3.1",
     "express": "^4.17.1",
     "http-errors": "^1.8.0",
+    "install": "^0.13.0",
     "morgan": "^1.10.0",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "querystring": "^0.2.1",
+    "url": "^0.11.0"
   },
   "description": "My Pug Express Server",
   "main": "app.js",
