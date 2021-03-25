@@ -1,14 +1,14 @@
-var express = require('express');
-const url = require('url');
-var router = express.Router();
-const querystring = require('querystring');
+var express=require('express')
+var router=express.Router()
 
-let alert = require('alert');
-/* GET my data page. */
-router.get('/', function(req, res, next) {
-    var s = req.query.value;
-    res.send('sin applied to: ' + s + " is " + Math.sin(s));
-});
+router.get('/',(req,res)=>{
+    let r=Math.floor(Math.random()*100)+1
+    let s=req.query.x
+    console.log(data)
+    res.render('computation',{
+        randomSolution:`Sin of ${r} is ${Math.sin(r)}`,
+        querySolution:`Sin root of ${s} is ${Math.sin(s)}`
+    })
+})
 
-
-module.exports = router;
+module.exports=router
