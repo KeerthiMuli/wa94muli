@@ -2,12 +2,12 @@ var express=require('express')
 var router=express.Router()
 
 router.get('/',(req,res)=>{
-    let r=Math.floor(Math.random()*100)+1
-    let s=req.query.x
+    let randomNumber=Math.floor(Math.random()*100)+1
+    let data=req.query.x
     console.log(data)
     res.render('computation',{
-        randomSolution:`Sin of ${r} is ${Math.sin(r)}`,
-        querySolution:`Sin root of ${s} is ${Math.sin(s)}`
+        randomSolution:`Sine of ${randomNumber} is ${Math.sin(randomNumber)}`,
+        querySolution:`Sine of ${data} is ${Math.sin(data)}`
     })
 })
 
